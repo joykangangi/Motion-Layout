@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:padding="8dp"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity"
+    tools:showPaths="true">
+
+   <TextView
+       android:id="@+id/myText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+       android:layout_marginStart="8dp"
+       android:text="@string/aText"
+       android:textSize="24sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/myText" />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:id="@+id/butttonn"
+      android:text="@string/btnText"
+      android:clickable="false"
+      android:layout_marginTop="16dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
+      app:layout_constraintTop_toBottomOf="@id/myText"
+      app:layout_constraintStart_toStartOf="parent"
+       android:background="@color/colorAccent"/>
+
+   <TextView
+       android:id="@+id/textTwo"
+       android:text="@string/aText"
+       android:layout_width="wrap_content"
+
+       android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="8dp"
+      app:layout_constraintTop_toBottomOf="@id/butttonn"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
